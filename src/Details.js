@@ -55,7 +55,7 @@ function Details({ fetchData, countries }) {
                     Dark mode
                 </p>
             </div>
-            <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to="/">
+            <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to="/rest-countries-api">
                 <div className='back-btn'>
                     <BsArrowLeft></BsArrowLeft>
                     Back
