@@ -62,7 +62,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={
+      <Route path="/rest-countries-api" element={
         <>
           <div className="header">
             <h2>Where in the world?</h2>
@@ -101,7 +101,7 @@ function App() {
           </div>
         </>
       } />
-      <Route path="/:id" element={<Details fetchData={fetchData} countries={countries}></Details>} />
+      <Route path="/rest-countries-api/:id" element={<Details fetchData={fetchData} countries={countries}></Details>} />
     </Routes>
   );
 }
