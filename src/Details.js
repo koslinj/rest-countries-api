@@ -83,7 +83,7 @@ function Details({ fetchData, countries }) {
                         <b>Border Countries:</b>
                         {
                             typeof borders !== 'undefined' ? (borders.map((key, id) => {
-                                return <Link style={{ color: 'inherit', textDecoration: 'inherit' }} key={id} to={'/' + key}><div className='border-country'>
+                                return <Link style={{ color: 'inherit', textDecoration: 'inherit' }} key={id} to={'/rest-countries-api/' + key}><div className='border-country'>
                                     {
                                         countries.forEach(country => {
                                             if (country.cca3 === key) converted = country.name.common;
